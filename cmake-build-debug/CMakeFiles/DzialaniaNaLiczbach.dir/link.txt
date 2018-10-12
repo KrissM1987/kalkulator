@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/DzialaniaNaLiczbach.dir/main.c.o  -o DzialaniaNaLiczbach 
