@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
 {
@@ -20,6 +21,23 @@ int main()
     double eps = 0.001;
     printf("%i\n", a==b);
     printf("%lf\n", ((f-g)*(f-g))<eps);
+
+    int rok;
+    bool przestepny;
+    printf("Podaj rok: ");
+    scanf("%i", &rok);
+
+    przestepny = !(rok % 400) || rok % 100 && !(rok % 4);
+    printf("%i\n", przestepny);
+
+
+
+    int h = 7 , i = 3, max, min;
+    max = h > i ? h : i;
+    printf("maksimum: %i\n", max);
+    min = h < i ? h : i;
+    printf ("minimum : %i", min);
+
 
 
 
